@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "synthetic-neighbor-distance"
+version = "0.1.0a1"
+description = "FR: Détecter les copies et voisins proches des données sources | EN: Detect source copies and close synthetic neighbors | ES: Detectar copias y vecinos sintéticos cercanos"
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+synthetic-neighbor-distance = "synthetic_neighbor_distance.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["synthetic_neighbor_distance*"]
